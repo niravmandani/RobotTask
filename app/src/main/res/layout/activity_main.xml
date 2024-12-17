@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Grid Dimensions -->
+    <EditText
+        android:id="@+id/grid_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter grid size (e.g., 5 5)"
+        android:inputType="text" />
+
+    <!-- Initial Robot Position -->
+    <EditText
+        android:id="@+id/robot_position_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter robot position (e.g., 1 2 N)"
+        android:inputType="text" />
+
+    <!-- Navigation Commands -->
+    <EditText
+        android:id="@+id/navigation_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter navigation commands (e.g., LMLMLMLMM)"
+        android:inputType="text" />
+
+    <!-- Execute Button -->
+    <Button
+        android:id="@+id/execute_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Execute Commands" />
+
+    <!-- Result -->
+    <TextView
+        android:id="@+id/result_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Result: "
+        android:textSize="18sp" />
+</LinearLayout>
